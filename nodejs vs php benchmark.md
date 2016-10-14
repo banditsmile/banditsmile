@@ -71,6 +71,7 @@ ab -n 1000 -c 100 http://localhost:9501/
 
 测试结果
 1.
+```
 ab -n 1000 -c 100 http://localhost:8000/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -136,7 +137,9 @@ Percentage of the requests served within a certain time (ms)
   98%     18
   99%     19
  100%     20 (longest request)
+```
 2.
+```
 ab -n 1000 -c 100 http://localhost:9501/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -193,7 +196,9 @@ Percentage of the requests served within a certain time (ms)
   98%     10
   99%     11
  100%     11 (longest request)
+```
 3.
+```
 ab -n 1000 -c 100 http://benchmark.php.fpm/index.php
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -248,7 +253,9 @@ Percentage of the requests served within a certain time (ms)
   98%     28
   99%     29
  100%     30 (longest request)
+```
 4.
+```
 ab -n 1000 -c 100 http://benchmark.nginx.php.fpm.codeigniter/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -303,8 +310,9 @@ Percentage of the requests served within a certain time (ms)
   98%    504
   99%    508
  100%    525 (longest request)
- 
+``` 
 5.
+```
 ab -n 1000 -c 100 http://localhost:8888/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -359,7 +367,9 @@ Percentage of the requests served within a certain time (ms)
   98%     27
   99%     28
  100%     28 (longest request)
+```
 6.
+```
 ab -n 1000 -c 100 http://localhost:8888/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -414,7 +424,9 @@ Percentage of the requests served within a certain time (ms)
   98%     83
   99%     88
  100%    110 (longest request)
+```
 7.
+```
 ab -n 1000 -c 100 http://localhost:8888/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -469,7 +481,9 @@ Percentage of the requests served within a certain time (ms)
   98%     71
   99%     72
  100%     74 (longest request)
+```
 8.
+```
 ab -n 1000 -c 100 http://localhost:3000/
 This is ApacheBench, Version 2.3 <$Revision: 1706008 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
@@ -524,3 +538,4 @@ Percentage of the requests served within a certain time (ms)
   98%   1152
   99%   1207
  100%   1252 (longest request)
+```
