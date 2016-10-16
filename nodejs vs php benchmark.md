@@ -1,13 +1,15 @@
 硬件信息(acer-4738g 换了8g内存)
+```
 cpu:Intel(R) Core(TM) i5 CPU       M 480  @ 2.67GHz
 内存:8g
-
+```
 软件信息
+```
 nodejs:v4.6.0
 php:5.6.25
 nginx:1.10.0 
 os:ubuntu 14.04 lts
-
+```
 
 1.使用php 内置的web server(php >5.4)
 ```
