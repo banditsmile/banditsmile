@@ -1,10 +1,14 @@
-配置nginx支持png|jpg|gif自动转换成webp格式　　
+##配置nginx支持png|jpg|gif自动转换成webp格式　　
 ###编译安装libwebp　　
 下载地址https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html　　　
+
 0.选择编译好的二进制包下载，然后拷贝到对应的安装目录(例如/usr/local/libwebp)即可　　　　
+
 ####如果在使用中报错可以尝试手动编译　　　　
 1.下载libwebp源码，更具机器情况选择最新版本　　　　
+
 2.执行编译　　　　
+
 ```
 wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-0.5.1.tar.gz
 tar xzf libwebp-0.5.1.tar.gz
@@ -15,8 +19,11 @@ tar xzf libwebp-0.5.1.tar.gz
 ```
 
 ###nginx配置　　　　
+
 0.检查$/usr/local/nginx/sbin/nginx -V检查一下nginx是否支持lua脚本,如果不支持请重新编译nginx　　　　
+
 １．将下面的脚本保存在/usr/local/nginx/lua/webp.lua里面　　　　
+
 ```
 function file_exists(name)
    local f=io.open(name,"r")
@@ -40,7 +47,9 @@ else
 end
 ```
 2.检查$/usr/local/nginx/conf/mime.types里面有没有"image/webp webp;",如果没有则加上　　　　
+
 3.在nginx的虚拟主机对应的配置文件server模块里面添加一下配置　　　　
+
 ```
     location /images {#改成你的图片路径前缀
          expires 365d;
