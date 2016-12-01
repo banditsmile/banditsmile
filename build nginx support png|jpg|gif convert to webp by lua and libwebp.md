@@ -62,3 +62,7 @@ end
         #}
     }
 ```
+
+4./usr/local/ngin/sbin/nginx -t检查nginx配置是否有问题
+
+5./usr/local/ngin/sbin/nginx -s reload 重载nginx配置就可以使用图片自动转换了
