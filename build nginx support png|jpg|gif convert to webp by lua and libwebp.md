@@ -66,3 +66,8 @@ end
 4./usr/local/ngin/sbin/nginx -t检查nginx配置是否有问题
 
 5./usr/local/ngin/sbin/nginx -s reload 重载nginx配置就可以使用图片自动转换了
+
+
+参考链接
+lua脚本　http://blog.eqoe.cn/posts/switch-to-webp.html
+libwebp官网　https://developers.google.com/speed/webp/
