@@ -16,7 +16,7 @@ ssh自动登录脚本，省去每次手动输入密码的烦恼。
     send -- "\r"
     interact
     ```
-2. ssh.sh
+2. ssh.sh  
     ```
     #!/bin/sh
     echo $1
