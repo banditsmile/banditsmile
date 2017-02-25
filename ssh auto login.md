@@ -23,6 +23,7 @@ ssh自动登录脚本，省去每次手动输入密码的烦恼。
     account_info=`/bin/grep $1 ./acount.txt|xargs echo`;
     ./ssh.ex $account_info
     ```
+    
 3. acount.txt用来保存服务器账号和密码  
     ```
     服务器地址 用户名 密码  #还可以写一些备注信息
