@@ -1,3 +1,6 @@
+@link https://www.ibm.com/developerworks/cn/linux/sdk/php/pear3/index.html
+
+
 什么是phpdoc
 -----
 PHPDoc是PEAR下面的一个非常优秀的模块，它的目标是实现类似javadoc的功能，可以为你的代码快速生成具有相互参照,索引等功能的API文档。如果你使用过javadoc生成的文档(如jdk的文档），你会非常清楚，如果你没有用过，那么下面是一个phpdoc生成它自己的文档页面的截图：
