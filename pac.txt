@@ -1,0 +1,8 @@
+function FindProxyForURL(url, host) {
+	//return "PROXY 10.0.130.175:8080";
+	//return "PROXY 192.168.1.101:8080";
+	//return "PROXY 10.0.130.175:8080";
+	//return "PROXY 10.0.2.109:8089";
+	return "PROXY 192.168.29.181:80";
+	//return "DIRECT";
+}
