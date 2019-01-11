@@ -150,3 +150,10 @@ bufio源码分析
 			err          error     // Sticky error.
 		}
 		```
+		
+		
+参考文章：
+1. [深入介绍 Golang 中的 bufio.Scanner](https://juejin.im/entry/5b17971f5188257d7270967e)
+2. [Golang学习 - bufio 包](https://www.cnblogs.com/golove/p/3282667.html)
+3. [1. 1.4 bufio — 缓存IO](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/chapter01/01.4.html)
+		
