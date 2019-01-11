@@ -82,11 +82,11 @@ bufio源码分析
 3. Writer对象
 	```
 	type Writer struct {
-           err error
-           buf []byte
-           n   int
-           wr  io.Writer
-       }
+        err error        // 写过程中遇到的错误
+        buf []byte        // 缓存
+        n   int            // 当前缓存中的字节数
+        wr  io.Writer    // 底层的 io.Writer 对象
+    }
 
 	```	
 4. bufio.Write(p []byte) 的思路如下
@@ -125,7 +125,8 @@ bufio源码分析
        nn += n
        return nn, nil
    }
-	```	
+	```  
+	8. b.flush() 会将缓存区内容写入文件，当所有写入完成后，因为缓存区会存储内容，所以需要手动flush()到文件	
 	
 5. Scanner对象，对于Scanner对象的出现官方的说法如下  
 	1. 官方描述
