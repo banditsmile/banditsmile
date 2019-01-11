@@ -62,4 +62,10 @@ func main() {
 	fmt.Println(n, err)     // 12 <nil>
 }
 ```
-从这个例子我才发现，所谓实现Reader接口就是要完成从哪里读取内容这个功能，那么对应的Writer接口就是要实现朝哪里写数据的功能，而且这儿两个接口是最基本的，其他接口对应的是一些花式的玩法。
+从这个例子我才发现，所谓实现Reader接口就是要完成从哪里读取内容这个功能，
+那么对应的Writer接口就是要实现朝哪里写数据的功能，而且这儿两个接口是最基本的，
+其他接口对应的是一些花式的玩法。
+
+参考文章：
+1. [golang中bufio包的实现原理](https://my.oschina.net/liangwt/blog/1603593)
+2. [Golang学习 - io 包](https://www.cnblogs.com/golove/p/3276678.html)
