@@ -19,7 +19,7 @@ yum install -y gcc gcc-c++
 PHP扩展依赖
 ```
 yum install -y libxml2-devel openssl-devel libcurl-devel \
-libjpeg-devel libpng-devel libicu-devel openldap-devel
+libjpeg-devel libpng-devel libicu-devel openldap-devel readline-devel
 ```
 
 ##编译指令
